@@ -4,5 +4,5 @@
 - [abstract class](abstract-class.js)
 
 ### Creational Design Patterns
-- [abstract fabric](abstract-fabric.js)
+- [abstract fabric](abstract-fabric.md)
 - [builder](builder.js)
