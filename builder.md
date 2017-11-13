@@ -16,7 +16,6 @@ class HouseDirector {
     this.builder.buildWalls();
     this.builder.addRoof();
     this.builder.addWindows();
-    return this.builder.getResult();
   }
 }
 
@@ -57,15 +56,6 @@ class AbstractHouseBuilder {
    * @method
    */
   addWindows() {
-    throw new Error('Abstract method addWindows() must be implemented by subclass');
-  }
-
-  /**
-   * getResult abstract method
-   * @abstract
-   * @method
-   */
-  getResult() {
     throw new Error('Abstract method addWindows() must be implemented by subclass');
   }
 }
@@ -150,8 +140,11 @@ class WoodenHouseBuilder extends AbstractHouseBuilder {
  * Client code
  */
 const builder = new ConcreteHouseBuilder();
+
 const director = new HouseDirector(builder);
-const house = director.buildHouse();
+director.buildHouse();
+
+const house = builder.getResult();
 
 console.log(house.mainMaterial);        // 'concrete'
 
@@ -163,4 +156,5 @@ console.log(house.roof.angleDegrees);   // 15
 
 console.log(house.windows.material);    // 'armored glass'
 console.log(house.windows.quantity);    // 10
+
 ```
