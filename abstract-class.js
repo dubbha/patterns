@@ -1,4 +1,4 @@
-/*
+/**
  * Abstract class
  * @abstract
  * @class
@@ -11,7 +11,8 @@ class House {
     }
   }
 
-  /* Abstract method
+  /**
+   * Abstract method
    * @abstract
    * @method
    */
@@ -20,7 +21,7 @@ class House {
   }
 }
 
-/*
+/**
  * Concrete class
  * @class
  */
