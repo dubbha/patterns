@@ -1,3 +1,5 @@
+# Builder
+
 ### UML diagram
 ![builder](/img/builder.svg)
 
@@ -80,15 +82,18 @@ class ConcreteHouseBuilder extends HouseBuilder {
   }
 
   buildWalls() {
-    this.concreteHouse.buildWalls();
+    this.concreteHouse.walls.material = this.concreteHouse.mainMaterial;
+    this.concreteHouse.walls.quantity = 5;
   }
 
   addRoof() {
-    this.concreteHouse.addRoof();
+    this.concreteHouse.roof.material = 'metal';
+    this.concreteHouse.roof.angleDegrees = 15;
   }
 
   addWindows() {
-    this.concreteHouse.addWindows();
+    this.concreteHouse.windows.material = 'armored glass';
+    this.concreteHouse.windows.quantity = 10;
   }
 
   getResult() {
@@ -110,15 +115,18 @@ class WoodenHouseBuilder extends HouseBuilder {
   }
 
   buildWalls() {
-    this.woodenHouse.buildWalls();
+    this.woodenHouse.walls.material = this.woodenHouse.mainMaterial;
+    this.woodenHouse.walls.quantity = 4;
   }
 
   addRoof() {
-    this.woodenHouse.addRoof();
+    this.woodenHouse.roof.material = 'terracotta';
+    this.woodenHouse.roof.angleDegrees = 30;
   }
 
   addWindows() {
-    this.woodenHouse.addWindows();
+    this.woodenHouse.windows.material = 'glass';
+    this.woodenHouse.windows.quantity = 4;
   }
 
   getResult() {
@@ -145,33 +153,6 @@ class House {
     this.roof = {};
     this.windows = {};
   }
-
-  /**
-   * buildWalls abstract method
-   * @abstract
-   * @method
-   */
-  buildWalls() {
-    throw new Error('Abstract method buildWalls() must be implemented by subclass');
-  }
-
-  /**
-   * addRoof abstract method
-   * @abstract
-   * @method
-   */
-  addRoof() {
-    throw new Error('Abstract method addRoof() must be implemented by subclass');
-  }
-
-  /**
-   * addWindows abstract method
-   * @abstract
-   * @method
-   */
-  addWindows() {
-    throw new Error('Abstract method addWindows() must be implemented by subclass');
-  }
 }
 
 /**
@@ -184,21 +165,6 @@ class ConcreteHouse extends House {
 
     this.mainMaterial = 'concrete';
   }
-
-  buildWalls() {
-    this.walls.material = this.mainMaterial;
-    this.walls.quantity = 5;
-  }
-
-  addRoof() {
-    this.roof.material = 'metal';
-    this.roof.angleDegrees = 15;
-  }
-
-  addWindows() {
-    this.windows.material = 'armored glass';
-    this.windows.quantity = 10;
-  }
 }
 
 /**
@@ -210,21 +176,6 @@ class WoodenHouse extends House {
     super();
 
     this.mainMaterial = 'wood';
-  }
-
-  buildWalls() {
-    this.walls.material = this.mainMaterial;
-    this.walls.quantity = 4;
-  }
-
-  addRoof() {
-    this.roof.material = 'terracotta';
-    this.roof.angleDegrees = 30;
-  }
-
-  addWindows() {
-    this.windows.material = 'glass';
-    this.windows.quantity = 4;
   }
 }
 
