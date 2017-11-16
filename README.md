@@ -1,7 +1,7 @@
 ## Design Patterns
 
-### Constructs nonexistent in JavsScript
-- [abstract class](abstract-class.js)
+### Syntax nonexistent in JavsScript
+- [abstract class](abstract-class.md)
 
 ### Creational Design Patterns
 - [abstract fabric](abstract-fabric.md)
