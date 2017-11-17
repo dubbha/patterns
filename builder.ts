@@ -4,6 +4,7 @@
  */
 class HouseDirector {
   builder: HouseBuilder;
+
   constructor() {
     this.builder = null;
   }
@@ -27,8 +28,6 @@ class HouseDirector {
  * @class
  */
 abstract class HouseBuilder {
-  constructor() {}
-
   /**
    * buildWalls abstract method
    * @abstract
