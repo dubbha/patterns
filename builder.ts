@@ -142,6 +142,21 @@ abstract class House {
     material: string,
     quantity: number,
   };
+
+  constructor() {
+    this.walls = {
+        material: null,
+        quantity: null,
+    };
+    this.roof = {
+      material: null,
+      angleDegrees: null,
+    };
+    this.windows = {
+        material: null,
+        quantity: null,
+    };
+  }
 }
 
 /**

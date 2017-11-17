@@ -1,0 +1,21 @@
+{
+  "name": "patterns",
+  "version": "1.0.0",
+  "description": "Design Patterns with TypeScript and JavaScript",
+  "main": "README.md",
+  "scripts": {
+    "start": "ts-node index.ts",
+    "ts": "ts-node -- $1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dubbha/patterns.git"
+  },
+  "author": "Alex Dubovyk",
+  "license": "MIT",
+  "homepage": "https://github.com/dubbha/patterns#readme",
+  "devDependencies": {
+    "ts-node": "^3.3.0",
+    "typescript": "^2.6.1"
+  }
+}

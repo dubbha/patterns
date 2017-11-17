@@ -4,5 +4,5 @@
 - [abstract class](abstract-class.md)
 
 ### Creational Design Patterns
-- [abstract fabric](abstract-fabric.md)
+- [abstract factory](abstract-factory.md)
 - [builder](builder.md)
