@@ -6,3 +6,4 @@
 ### Creational Design Patterns
 - [abstract factory](abstract-factory.md)
 - [builder](builder.md)
+- [abstract method](abstract-method.md)
