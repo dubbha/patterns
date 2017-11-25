@@ -5,11 +5,13 @@
     <id>UMLClass</id>
     <coordinates>
       <x>231</x>
-      <y>187</y>
+      <y>165</y>
       <w>231</w>
-      <h>77</h>
+      <h>99</h>
     </coordinates>
     <panel_attributes>/PillCreator/
+-
++theChosenPill: void
 -
 /+createPill(): void/
 +choosePill()
