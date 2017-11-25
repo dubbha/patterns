@@ -22,7 +22,7 @@ class AlphaCentauriA {
 }
 
 // Client code
-let star = new AlphaCentauriA();  // reinstantiate
+let star = new AlphaCentauriA();  // instantiate
 console.log(star.name);           // 'HD 128620'
 
 star.rename('Rigil Kentaurus');   // rename
