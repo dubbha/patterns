@@ -4,29 +4,27 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>616</x>
-      <y>154</y>
+      <x>231</x>
+      <y>187</y>
       <w>231</w>
-      <h>99</h>
+      <h>77</h>
     </coordinates>
-    <panel_attributes>/PillChooser/
+    <panel_attributes>/PillCreator/
 -
-+theChosenPill: Pill
--
-/+createPill(): Pill/
-+choosePill(): void
+/+createPill(): void/
++choosePill()
 </panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>495</x>
-      <y>308</y>
+      <x>110</x>
+      <y>319</y>
       <w>231</w>
       <h>66</h>
     </coordinates>
-    <panel_attributes>RedPillChooser
+    <panel_attributes>RedPillCreator
 -
 +createPill(): RedPill</panel_attributes>
     <additional_attributes/>
@@ -34,8 +32,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>682</x>
-      <y>242</y>
+      <x>297</x>
+      <y>253</y>
       <w>33</w>
       <h>88</h>
     </coordinates>
@@ -45,8 +43,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>770</x>
-      <y>242</y>
+      <x>385</x>
+      <y>253</y>
       <w>33</w>
       <h>88</h>
     </coordinates>
@@ -56,12 +54,12 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>748</x>
-      <y>308</y>
+      <x>363</x>
+      <y>319</y>
       <w>231</w>
       <h>66</h>
     </coordinates>
-    <panel_attributes>BluePillChooser
+    <panel_attributes>BluePillCreator
 -
 +createPill(): BluePill</panel_attributes>
     <additional_attributes/>
@@ -69,8 +67,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>495</x>
-      <y>517</y>
+      <x>110</x>
+      <y>528</y>
       <w>231</w>
       <h>33</h>
     </coordinates>
@@ -81,8 +79,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>616</x>
-      <y>418</y>
+      <x>231</x>
+      <y>429</y>
       <w>231</w>
       <h>55</h>
     </coordinates>
@@ -95,8 +93,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>748</x>
-      <y>517</y>
+      <x>363</x>
+      <y>528</y>
       <w>231</w>
       <h>33</h>
     </coordinates>
@@ -107,8 +105,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>770</x>
-      <y>462</y>
+      <x>385</x>
+      <y>473</y>
       <w>33</w>
       <h>77</h>
     </coordinates>
@@ -118,8 +116,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>682</x>
-      <y>462</y>
+      <x>297</x>
+      <y>473</y>
       <w>33</w>
       <h>77</h>
     </coordinates>
@@ -129,8 +127,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>902</x>
-      <y>363</y>
+      <x>517</x>
+      <y>374</y>
       <w>33</w>
       <h>176</h>
     </coordinates>
@@ -140,12 +138,34 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>539</x>
-      <y>363</y>
+      <x>154</x>
+      <y>374</y>
       <w>33</w>
       <h>176</h>
     </coordinates>
     <panel_attributes>lt=&lt;..</panel_attributes>
     <additional_attributes>10.0;140.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>330</x>
+      <y>231</y>
+      <w>209</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;170.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>517</x>
+      <y>231</y>
+      <w>220</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>theChosenPill = createPill()</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>

@@ -7,14 +7,18 @@
       <x>154</x>
       <y>110</y>
       <w>231</w>
-      <h>99</h>
+      <h>165</h>
     </coordinates>
-    <panel_attributes>AlphaCentauri
+    <panel_attributes>AlphaCentauriA
 -
--singleton: Singleton
+-instance: AlphaCentauriA
++name: string,
++mass: string,
++radius: string,
++distance: string,
 -
--Singleton(): Singleton
-+getStar(): Singleton
+-constructor(): AlphaCentauriA
++rename(): void
 </panel_attributes>
     <additional_attributes/>
   </element>
