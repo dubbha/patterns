@@ -103,7 +103,7 @@
       >PillCreator</text
       ><path fill="none" d="M1 23.9688 L209 23.9688" clip-path="url(#clipPath6)"
       /><text x="5" font-size="14px" y="38.9375" clip-path="url(#clipPath6)" font-family="sans-serif" font-style="italic" stroke="none" xml:space="preserve"
-      >+createPill(): Pill</text
+      >+createPill(): void</text
       ><text x="5" font-size="14px" y="54.9062" clip-path="url(#clipPath6)" font-family="sans-serif" stroke="none" xml:space="preserve"
       >+choosePill()</text
     ></g
