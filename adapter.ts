@@ -1,14 +1,14 @@
-interface ITarget {
+interface InterfaceDC12V {
   chargeDC12V();
 }
 
-class OutletDC12V implements ITarget {
+class OutletDC12V implements InterfaceDC12V {
   public chargeDC12V() {
     return 'DC12V';
   };
 }
 
-class Adapter implements ITarget {
+class Adapter implements InterfaceDC12V {
   private adaptee: OutletAC220V;
 
   constructor(adaptee) {
