@@ -15,12 +15,12 @@ class Adapter implements ITarget {
     this.adaptee = adaptee;
   }
 
-  private transform(current) {
+  private transformACDC(current) {
     return current.replace('AC', 'DC').replace('220', '12');
   }
 
   public chargeDC12V() {
-    return this.transform(this.adaptee.chargeAC220V());
+    return this.transformACDC(this.adaptee.chargeAC220V());
   }
 }
 
