@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.2">
+  <zoom_level>11</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>154</x>
+      <y>110</y>
+      <w>242</w>
+      <h>165</h>
+    </coordinates>
+    <panel_attributes>AlphaCentauriA
+-
+_-instance: AlphaCentauriA_
++name: string,
++mass: string,
++radius: string,
++distance: string,
+-
++constructor(): AlphaCentauriA
++rename(newName: string): void
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>

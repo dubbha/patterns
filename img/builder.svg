@@ -18,13 +18,13 @@
       ><path d="M0 0 L0 120 L210 120 L210 0 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath5"
-      ><path d="M0 0 L0 90 L290 90 L290 0 Z"
+      ><path d="M0 0 L0 90 L300 90 L300 0 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath6"
       ><path d="M0 0 L0 90 L210 90 L210 0 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath7"
-      ><path d="M0 0 L0 30 L290 30 L290 0 Z"
+      ><path d="M0 0 L0 30 L300 30 L300 0 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath8"
       ><path d="M0 0 L0 230 L30 230 L30 0 Z"
@@ -33,7 +33,7 @@
       ><path d="M0 0 L0 80 L30 80 L30 0 Z"
       /></clipPath
       ><clipPath clipPathUnits="userSpaceOnUse" id="clipPath10"
-      ><path d="M0 0 L0 30 L150 30 L150 0 Z"
+      ><path d="M0 0 L0 30 L140 30 L140 0 Z"
       /></clipPath
     ></defs
     ><g fill="rgb(255,255,255)" fill-opacity="0" transform="translate(740,600)" stroke-opacity="0" stroke="rgb(255,255,255)"
@@ -78,32 +78,32 @@
       >WoodenHouseBuilder</text
       ><path fill="none" d="M1 23.9688 L209 23.9688" clip-path="url(#clipPath4)"
       /><text x="5" font-size="14px" y="38.9375" clip-path="url(#clipPath4)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >-WoodenHouse woodenHouse</text
+      >-woodenHouse: WoodenHouse</text
       ><path fill="none" d="M1 44.9375 L209 44.9375" clip-path="url(#clipPath4)"
       /><text x="5" font-size="14px" y="59.9062" clip-path="url(#clipPath4)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >+void buildWalls()</text
+      >+buildWalls(): void</text
       ><text x="5" font-size="14px" y="75.875" clip-path="url(#clipPath4)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >+void addRoof()</text
+      >+addRoof(): void</text
       ><text x="5" font-size="14px" y="91.8438" clip-path="url(#clipPath4)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >+void addWindows()</text
+      >+addWindows(): void</text
       ><text x="5" font-size="14px" y="107.8125" clip-path="url(#clipPath4)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >+WoodenHouse getResult()</text
+      >+getResult(): WoodenHouse</text
     ></g
     ><g fill="rgb(255,255,255)" fill-opacity="0" transform="translate(210,140)" stroke-opacity="0" stroke="rgb(255,255,255)"
-    ><rect x="0.5" width="288.5" height="88.5" y="0.5" clip-path="url(#clipPath5)" stroke="none"
+    ><rect x="0.5" width="298.5" height="88.5" y="0.5" clip-path="url(#clipPath5)" stroke="none"
     /></g
     ><g transform="translate(210,140)"
-    ><rect fill="none" x="0.5" width="288.5" height="88.5" y="0.5" clip-path="url(#clipPath5)"
-      /><text x="100" font-size="14px" y="17.9688" clip-path="url(#clipPath5)" font-family="sans-serif" stroke="none" xml:space="preserve"
+    ><rect fill="none" x="0.5" width="298.5" height="88.5" y="0.5" clip-path="url(#clipPath5)"
+      /><text x="105" font-size="14px" y="17.9688" clip-path="url(#clipPath5)" font-family="sans-serif" stroke="none" xml:space="preserve"
       >HouseDirector</text
-      ><path fill="none" d="M1 23.9688 L289 23.9688" clip-path="url(#clipPath5)"
+      ><path fill="none" d="M1 23.9688 L299 23.9688" clip-path="url(#clipPath5)"
       /><text x="5" font-size="14px" y="38.9375" clip-path="url(#clipPath5)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >-HouseBuilder houseBuilder</text
-      ><path fill="none" d="M1 44.9375 L289 44.9375" clip-path="url(#clipPath5)"
+      >-houseBuilder: HouseBuilder</text
+      ><path fill="none" d="M1 44.9375 L299 44.9375" clip-path="url(#clipPath5)"
       /><text x="5" font-size="14px" y="59.9062" clip-path="url(#clipPath5)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >+void setBuilder(HouseBuilder houseBuilder)</text
+      >+setBuilder(houseBuilder: HouseBuilder): void</text
       ><text x="5" font-size="14px" y="75.875" clip-path="url(#clipPath5)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >+void buildHouse()</text
+      >+buildHouse(): void</text
     ></g
     ><g fill="rgb(255,255,255)" fill-opacity="0" transform="translate(510,280)" stroke-opacity="0" stroke="rgb(255,255,255)"
     ><rect x="0.5" width="208.5" height="118.5" y="0.5" clip-path="url(#clipPath4)" stroke="none"
@@ -114,16 +114,16 @@
       >ConcreteHouseBuilder</text
       ><path fill="none" d="M1 23.9688 L209 23.9688" clip-path="url(#clipPath4)"
       /><text x="5" font-size="14px" y="38.9375" clip-path="url(#clipPath4)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >-ConcreteHouse concreteHouse</text
+      >-concreteHouse: ConcreteHouse</text
       ><path fill="none" d="M1 44.9375 L209 44.9375" clip-path="url(#clipPath4)"
       /><text x="5" font-size="14px" y="59.9062" clip-path="url(#clipPath4)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >+void buildWalls()</text
+      >+buildWalls(): void</text
       ><text x="5" font-size="14px" y="75.875" clip-path="url(#clipPath4)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >+void addRoof()</text
+      >+addRoof(): void</text
       ><text x="5" font-size="14px" y="91.8438" clip-path="url(#clipPath4)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >+void addWindows()</text
+      >+addWindows(): void</text
       ><text x="5" font-size="14px" y="107.8125" clip-path="url(#clipPath4)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >+ConcreteHouse getResult()</text
+      >+getResult(): ConcreteHouse</text
     ></g
     ><g fill="rgb(255,255,255)" fill-opacity="0" transform="translate(620,140)" stroke-opacity="0" stroke="rgb(255,255,255)"
     ><rect x="0.5" width="208.5" height="88.5" y="0.5" clip-path="url(#clipPath6)" stroke="none"
@@ -134,18 +134,18 @@
       >HouseBuilder</text
       ><path fill="none" d="M1 23.9688 L209 23.9688" clip-path="url(#clipPath6)"
       /><text x="5" font-size="14px" y="38.9375" clip-path="url(#clipPath6)" font-family="sans-serif" font-style="italic" stroke="none" xml:space="preserve"
-      >+void buildWalls()</text
+      >+buildWalls(): void</text
       ><text x="5" font-size="14px" y="54.9062" clip-path="url(#clipPath6)" font-family="sans-serif" font-style="italic" stroke="none" xml:space="preserve"
-      >+void addRoof()</text
+      >+addRoof(): void</text
       ><text x="5" font-size="14px" y="70.875" clip-path="url(#clipPath6)" font-family="sans-serif" font-style="italic" stroke="none" xml:space="preserve"
-      >+void addWindows()</text
+      >+addWindows(): void</text
     ></g
     ><g fill="rgb(255,255,255)" fill-opacity="0" transform="translate(210,60)" stroke-opacity="0" stroke="rgb(255,255,255)"
-    ><rect x="0.5" width="288.5" height="28.5" y="0.5" clip-path="url(#clipPath7)" stroke="none"
+    ><rect x="0.5" width="298.5" height="28.5" y="0.5" clip-path="url(#clipPath7)" stroke="none"
     /></g
     ><g transform="translate(210,60)"
-    ><rect fill="none" x="0.5" width="288.5" height="28.5" y="0.5" clip-path="url(#clipPath7)"
-      /><text x="127" font-size="14px" y="17.9688" clip-path="url(#clipPath7)" font-family="sans-serif" stroke="none" xml:space="preserve"
+    ><rect fill="none" x="0.5" width="298.5" height="28.5" y="0.5" clip-path="url(#clipPath7)"
+      /><text x="132" font-size="14px" y="17.9688" clip-path="url(#clipPath7)" font-family="sans-serif" stroke="none" xml:space="preserve"
       >Client</text
     ></g
     ><g stroke-dasharray="1,2" stroke-miterlimit="5" transform="translate(550,390)" stroke-linecap="butt"
@@ -166,9 +166,9 @@
       /><path fill="white" d="M4 22.2583 L10.5 11 L17 22.2583 Z" clip-path="url(#clipPath9)" stroke="none"
       /><path fill="none" d="M4 22.2583 L10.5 11 L17 22.2583 Z" clip-path="url(#clipPath9)"
     /></g
-    ><g stroke-dasharray="1,2" stroke-miterlimit="5" transform="translate(490,140)" stroke-linecap="butt"
-    ><path fill="none" d="M129.5 10.5 L10.5 10.5" clip-path="url(#clipPath10)"
-      /><path fill="none" stroke-miterlimit="10" stroke-dasharray="none" d="M118.7417 4 L130 10.5 L118.7417 17" clip-path="url(#clipPath10)" stroke-linecap="square"
+    ><g stroke-dasharray="1,2" stroke-miterlimit="5" transform="translate(500,140)" stroke-linecap="butt"
+    ><path fill="none" d="M119.5 10.5 L10.5 10.5" clip-path="url(#clipPath10)"
+      /><path fill="none" stroke-miterlimit="10" stroke-dasharray="none" d="M108.7417 4 L120 10.5 L108.7417 17" clip-path="url(#clipPath10)" stroke-linecap="square"
     /></g
     ><g stroke-dasharray="1,2" stroke-miterlimit="5" transform="translate(350,80)" stroke-linecap="butt"
     ><path fill="none" d="M10.5 59.5 L10.5 10.5" clip-path="url(#clipPath9)"
