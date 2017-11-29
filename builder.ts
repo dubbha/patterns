@@ -206,3 +206,8 @@ console.log(house.roof.angleDegrees);   // 15
 
 console.log(house.windows.material);    // 'armored glass'
 console.log(house.windows.quantity);    // 10
+
+
+
+// Treat file as isolated module to prevent name duplication warnings
+export {}

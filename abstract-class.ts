@@ -19,3 +19,8 @@ class ConcreteHouse extends House {
 
 const house = new ConcreteHouse();
 house.build();
+
+
+
+// Treat file as isolated module to prevent name duplication warnings
+export {}
