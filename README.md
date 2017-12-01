@@ -16,3 +16,4 @@
 - [composite](composite.md)
 - [decorator](decorator.md)
 - [facade](facade.md)
+- [flyweight](flyweight.md)
