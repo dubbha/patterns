@@ -14,3 +14,4 @@
 - [adapter](adapter.md)
 - [bridge](bridge.md)
 - [composite](composite.md)
+- [decorator](decorator.md)
