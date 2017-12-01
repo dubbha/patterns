@@ -15,3 +15,4 @@
 - [bridge](bridge.md)
 - [composite](composite.md)
 - [decorator](decorator.md)
+- [facade](facade.md)
