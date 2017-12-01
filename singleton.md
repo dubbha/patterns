@@ -1,7 +1,7 @@
 # Singleton
 
 ### UML diagram
-![singleton](/img/singleton.svg)
+![singleton](img/singleton.svg)
 
 ### Code
  - [TypeScript](singleton.ts)

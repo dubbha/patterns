@@ -12,3 +12,5 @@
 
 ### Structural Design Patterns
 - [adapter](adapter.md)
+- [bridge](bridge.md)
+- [composite](composite.md)

@@ -1,7 +1,7 @@
 # Builder
 
 ### UML diagram
-![builder](/img/builder.svg)
+![builder](img/builder.svg)
 
 ### Code
  - [TypeScript](builder.ts)

@@ -1,44 +1,46 @@
-abstract class PillCreator {
-  public theChosenPill;
+namespace AbstractMethod {
+  abstract class PillCreator {
+    public theChosenPill;
 
-  abstract createPill(): void;
+    abstract createPill(): void;
 
-  choosePill() {
-    this.theChosenPill = this.createPill();
+    choosePill() {
+      this.theChosenPill = this.createPill();
+    }
   }
-}
 
-class RedPillChooser extends PillCreator {
-  createPill() {
-    return new RedPill();
+  class RedPillChooser extends PillCreator {
+    createPill() {
+      return new RedPill();
+    }
   }
-}
 
-class BluePillChooser extends PillCreator {
-  createPill() {
-    return new BluePill();
+  class BluePillChooser extends PillCreator {
+    createPill() {
+      return new BluePill();
+    }
   }
-}
 
-abstract class Pill {
-  public color: string;
-}
-
-class RedPill extends Pill {
-  constructor() {
-    super();
-    this.color = 'red';
+  abstract class Pill {
+    public color: string;
   }
-}
 
-class BluePill extends Pill {
-  constructor() {
-    super();
-    this.color = 'blue';
+  class RedPill extends Pill {
+    constructor() {
+      super();
+      this.color = 'red';
+    }
   }
-}
 
-// Client code
-const pill = new RedPillChooser();
-pill.choosePill();
-console.log(pill.theChosenPill.color);    // 'red'
+  class BluePill extends Pill {
+    constructor() {
+      super();
+      this.color = 'blue';
+    }
+  }
+
+  // Client code
+  const pill = new RedPillChooser();
+  pill.choosePill();
+  console.log(pill.theChosenPill.color);    // 'red'
+}
