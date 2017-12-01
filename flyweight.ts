@@ -1,7 +1,18 @@
 namespace Flyweight {
-  abstract class Snowman {
+  interface ISnowman {
+    draw(times: number): void;
+    getAssociations(): void;
+  }
+
+  class Snowman implements ISnowman {
+    // Extrinsic state
+    private times: number;
+
     // Intrinsic state, shared data
-    protected associations = [
+    private color: string;
+
+    // Intrinsic state, shared data
+    private associations = [
       'snow',
       'winter',
       'christmas',
@@ -10,7 +21,7 @@ namespace Flyweight {
     ];
 
     // Intrinsic state, shared data
-    protected colorMap = {
+    private colorMap = {
       red: '\x1b[31m',
       green: '\x1b[32m',
       yellow: '\x1b[33m',
@@ -20,19 +31,7 @@ namespace Flyweight {
       black: '\x1b[37m',
     };
 
-    abstract draw(times: number);
-    abstract getAssociations();
-  }
-
-  class ColoredSnowman extends Snowman {
-    // Intrinsic state, shared data
-    private color: string;
-
-    // Extrinsic state
-    private times: number;
-
     constructor(color) {
-      super();
       this.color = color;
     }
 
@@ -54,7 +53,7 @@ namespace Flyweight {
       if (this.cache[color]) {
         return this.cache[color];
       }
-      const instance = new ColoredSnowman(color);
+      const instance = new Snowman(color);
       this.cache[color] = instance;
       return this.cache[color];
     }
