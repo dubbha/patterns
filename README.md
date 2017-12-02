@@ -18,3 +18,6 @@
 - [facade](facade.md)
 - [flyweight](flyweight.md)
 - [proxy](proxy.md)
+
+### Behavioral Design Patterns
+- [chain of responsibility](chain-of-responsibility.md)
