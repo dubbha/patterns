@@ -21,3 +21,4 @@
 
 ### Behavioral Design Patterns
 - [chain of responsibility](chain-of-responsibility.md)
+- [command](command.md)
