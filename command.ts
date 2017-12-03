@@ -84,7 +84,7 @@ namespace CommandPattern {
   const elevator = new Elevator();
 
   controlPanel.storeAndExecute(new GoUpCommand(elevator, 1));     // Full pulley angle: 360. Floor #1
-  controlPanel.storeAndExecute(new GoUpCommand(elevator, 3));     // Full pulley angle: 360. Floor #4
+  controlPanel.storeAndExecute(new GoUpCommand(elevator, 3));     // Full pulley angle: 1440. Floor #4
   controlPanel.storeAndExecute(new GoUpCommand(elevator, 5));     // Full pulley angle: 3240. Floor #9
   controlPanel.storeAndExecute(new GoDownCommand(elevator, 4));   // Full pulley angle: 1800. Floor #5
   controlPanel.storeAndExecute(new GoDownCommand(elevator, 5));   // Full pulley angle: 0. Ground Floor
