@@ -5,4 +5,3 @@
 
 ### Code
  - [TypeScript](iterator.ts)
- 

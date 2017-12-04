@@ -23,3 +23,5 @@
 - [chain of responsibility](chain-of-responsibility.md)
 - [command](command.md)
 - [interpreter](interpreter.md)
+- [iterator](iterator.md)
+- [mediator](mediator.md)
