@@ -21,7 +21,7 @@ namespace MediatorPattern {
     incomingOrder(client: Client, address: string) {
       const driver = this.availableDrivers.shift();
       driver.assignOrder(address);
-      console.log(`${address}, ${client.name}, assigned to ${driver.name}`);
+      driver.radio(`Address: ${address}. Client: ${client.name}`);
     }
   }
 
@@ -75,6 +75,7 @@ namespace MediatorPattern {
 
   const client1 = new Client('Lady Gaga');
   const client2 = new Client('Mister Smith');
+  const client3 = new Client('Uma Thurman');
 
   driver1.register(uber);
   driver2.register(uber);                 // [Bill Wheel's Radio] John Engine says hello
@@ -83,7 +84,9 @@ namespace MediatorPattern {
 
   client1.register(uber);
   client2.register(uber);
+  client3.register(uber);
 
-  client1.orderTaxi('5 Maple Street');    // 5 Maple Street, Lady Gaga, assigned to Bill Wheel
-  client2.orderTaxi('17 Smith Street');   // 17 Smith Street, Mister Smith, assigned to John Engine
+  client1.orderTaxi('5 Maple Street');    // [Bill Wheel's Radio] Address: 5 Maple Street. Client: Lady Gaga
+  client2.orderTaxi('8 Smith Street');    // [John Engine's Radio] Address: 8 Smith Street. Client: Mister Smith
+  client3.orderTaxi('13 Bill Street');    // [Paz Gas's Radio] Address: 13 Bill Street. Client: Uma Thurman
 }
