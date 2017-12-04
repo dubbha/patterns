@@ -1,4 +1,4 @@
-namespace Bridge {
+namespace BridgePattern {
   abstract class SteeringWheel {
     private implementor;
 

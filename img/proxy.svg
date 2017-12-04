@@ -79,11 +79,13 @@
     ></g
     ><g stroke-dasharray="8,5" stroke-miterlimit="5" transform="translate(410,130)" stroke-linecap="butt"
     ><path fill="none" d="M10.5 11.5 L10.5 80.5" clip-path="url(#clipPath6)"
-      /><path fill="none" stroke-miterlimit="10" stroke-dasharray="none" d="M4 22.2583 L10.5 11 L17 22.2583" clip-path="url(#clipPath6)" stroke-linecap="square"
+      /><path fill="white" d="M4 22.2583 L10.5 11 L17 22.2583 Z" clip-path="url(#clipPath6)" stroke="none"
+      /><path fill="none" stroke-miterlimit="10" stroke-dasharray="none" d="M4 22.2583 L10.5 11 L17 22.2583 Z" clip-path="url(#clipPath6)" stroke-linecap="square"
     /></g
     ><g stroke-dasharray="8,5" stroke-miterlimit="5" transform="translate(350,130)" stroke-linecap="butt"
     ><path fill="none" d="M10.5 11.5 L10.5 80.5" clip-path="url(#clipPath6)"
-      /><path fill="none" stroke-miterlimit="10" stroke-dasharray="none" d="M4 22.2583 L10.5 11 L17 22.2583" clip-path="url(#clipPath6)" stroke-linecap="square"
+      /><path fill="white" d="M4 22.2583 L10.5 11 L17 22.2583 Z" clip-path="url(#clipPath6)" stroke="none"
+      /><path fill="none" stroke-miterlimit="10" stroke-dasharray="none" d="M4 22.2583 L10.5 11 L17 22.2583 Z" clip-path="url(#clipPath6)" stroke-linecap="square"
     /></g
     ><g stroke-dasharray="1,2" stroke-miterlimit="5" transform="translate(220,90)" stroke-linecap="butt"
     ><path fill="none" d="M89.5 10.5 L10.5 10.5" clip-path="url(#clipPath7)"

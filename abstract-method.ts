@@ -1,4 +1,4 @@
-namespace AbstractMethod {
+namespace AbstractMethodPattern {
   abstract class PillCreator {
     public theChosenPill;
 

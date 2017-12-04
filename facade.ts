@@ -1,4 +1,4 @@
-namespace Facade {
+namespace FacadePattern {
   class Patient {
     public bloodPressure: number;
     public eyeSightSharpness: number;

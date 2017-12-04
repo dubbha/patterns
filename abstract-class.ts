@@ -1,4 +1,4 @@
-namespace AbstractClass {
+namespace AbstractClassPattern {
   /**
    * Abstract class
    * @abstract

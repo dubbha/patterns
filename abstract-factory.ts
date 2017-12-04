@@ -1,4 +1,4 @@
-namespace AbstractFactory {
+namespace AbstractFactoryPattern {
   /*
   * AbstractVehicleFactory abstract class
   * @abstract

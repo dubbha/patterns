@@ -1,4 +1,4 @@
-namespace Composite {
+namespace CompositePattern {
   // Component
   abstract class TreePart {
     abstract grow();

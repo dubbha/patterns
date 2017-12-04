@@ -1,4 +1,4 @@
-namespace Adapter {
+namespace AdapterPattern {
   interface InterfaceDC12V {
     chargeDC12V();
   }

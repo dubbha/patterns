@@ -1,4 +1,4 @@
-namespace Decorator {
+namespace DecoratorPattern {
   abstract class Snowman {
     abstract draw(color?: string): void;
   }

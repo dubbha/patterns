@@ -1,4 +1,4 @@
-namespace Flyweight {
+namespace FlyweightPattern {
   interface ISnowman {
     draw(times: number): void;
     getAssociations(): void;
