@@ -1,27 +1,30 @@
 ## Design Patterns
 
-### Syntax nonexistent in JavsScript
-- [abstract class](abstract-class.md)
-
 ### Creational Design Patterns
-- [abstract factory](abstract-factory.md)
-- [builder](builder.md)
-- [abstract method](abstract-method.md)
-- [prototype](prototype.md)
-- [singleton](singleton.md)
+- [x] [abstract factory](abstract-factory.md)
+- [x] [builder](builder.md)
+- [x] [abstract method](abstract-method.md)
+- [x] [prototype](prototype.md)
+- [x] [singleton](singleton.md)
 
 ### Structural Design Patterns
-- [adapter](adapter.md)
-- [bridge](bridge.md)
-- [composite](composite.md)
-- [decorator](decorator.md)
-- [facade](facade.md)
-- [flyweight](flyweight.md)
-- [proxy](proxy.md)
+- [x] [adapter](adapter.md)
+- [x] [bridge](bridge.md)
+- [x] [composite](composite.md)
+- [x] [decorator](decorator.md)
+- [x] [facade](facade.md)
+- [x] [flyweight](flyweight.md)
+- [x] [proxy](proxy.md)
 
 ### Behavioral Design Patterns
-- [chain of responsibility](chain-of-responsibility.md)
-- [command](command.md)
-- [interpreter](interpreter.md)
-- [iterator](iterator.md)
-- [mediator](mediator.md)
+- [x] [chain of responsibility](chain-of-responsibility.md)
+- [x] [command](command.md)
+- [x] [interpreter](interpreter.md)
+- [x] [iterator](iterator.md)
+- [x] [mediator](mediator.md)
+- [ ] memento
+- [ ] observer
+- [ ] state
+- [ ] strategy
+- [ ] visitor
+- [ ] template method

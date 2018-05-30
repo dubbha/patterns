@@ -6,3 +6,6 @@
 ### Code
  - [TypeScript](abstract-factory.ts)
  - [JavaScript](abstract-factory.js)
+
+### Syntax nonexistent in JavsScript
+- [Abstract Class](abstract-class.md)

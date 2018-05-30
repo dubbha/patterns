@@ -1,4 +1,4 @@
-# Builder
+# Adapter
 
 ### UML diagram
 ![adapter](img/adapter.svg)
