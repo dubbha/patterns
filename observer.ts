@@ -1,5 +1,5 @@
 namespace ObserverPattern {
-  class Professional {          // Subject
+  class Professional {                      // Subject
     observers: Recruiter[] = [];
 
     subscribe(observer: Recruiter): void {
@@ -23,7 +23,7 @@ namespace ObserverPattern {
     }
   }
 
-  interface Recruiter {         // Observer
+  interface Recruiter {                     // Observer
     update(): void;
   }
 

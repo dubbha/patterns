@@ -23,7 +23,7 @@
 - [x] [iterator](iterator.md)
 - [x] [mediator](mediator.md)
 - [x] [memento](memento.md)
-- [ ] observer
+- [x] [observer](observer.md)
 - [ ] state
 - [ ] strategy
 - [ ] visitor
