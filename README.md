@@ -28,3 +28,16 @@
 - [ ] strategy
 - [ ] visitor
 - [ ] template method
+
+
+Run TypeScript files from command line like so:
+```
+npm run ts <filename>.ts
+```
+
+Example:
+```
+npm run ts observer.ts
+```
+
+Do not omit the '.ts' extension cause you might actually run '.js' file with the same name instead if exists
