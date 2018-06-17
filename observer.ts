@@ -1,5 +1,5 @@
 namespace ObserverPattern {
-  class Professional {                      // Subject
+  abstract class Professional {                      // Subject
     observers: Recruiter[] = [];
 
     subscribe(observer: Recruiter): void {
