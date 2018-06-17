@@ -26,8 +26,8 @@
 - [x] [observer](observer.md)
 - [x] [state](state.md)
 - [x] [strategy](strategy.md)
+- [x] [template method](template-method.md)
 - [ ] visitor
-- [ ] template method
 
 
 Run TypeScript files from command line like so:
