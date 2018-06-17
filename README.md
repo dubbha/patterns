@@ -25,7 +25,7 @@
 - [x] [memento](memento.md)
 - [x] [observer](observer.md)
 - [x] [state](state.md)
-- [ ] strategy
+- [x] [strategy](strategy.md)
 - [ ] visitor
 - [ ] template method
 
