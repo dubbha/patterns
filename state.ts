@@ -29,11 +29,11 @@ namespace StatePattern {
 
   // Client code
   const context = new MobileAlertContext();
+
   context.setState(new Vibration());
   context.request();                    // vibrating...
-  context.request();                    // vibrating...
+
   context.setState(new Silent());
-  context.request();                    // silent...
   context.request();                    // silent...
 
 }
