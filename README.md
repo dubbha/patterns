@@ -27,7 +27,7 @@
 - [x] [state](state.md)
 - [x] [strategy](strategy.md)
 - [x] [template method](template-method.md)
-- [ ] visitor
+- [x] [visitor](visitor.md)
 
 
 Run TypeScript files from command line like so:
