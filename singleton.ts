@@ -1,6 +1,12 @@
 namespace SingletonPattern {
   class AlphaCentauriA {
-    static instance: any;
+    static instance: {
+      name: string,
+      mass: string,
+      radius: string,
+      distance: string,
+      rename: Function,
+    };
 
     public name: string;
     public mass: string;
