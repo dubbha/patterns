@@ -5,9 +5,6 @@ namespace BuilderPattern {
    */
   class HouseDirector {
     builder: HouseBuilder;
-    constructor() {
-      this.builder = null;
-    }
 
     setBuilder(builder) {
       this.builder = builder;
@@ -28,8 +25,6 @@ namespace BuilderPattern {
    * @class
    */
   abstract class HouseBuilder {
-    constructor() {}
-
     /**
      * buildWalls abstract method
      * @abstract
@@ -130,16 +125,19 @@ namespace BuilderPattern {
    * @class
    */
   abstract class House {
-    public mainMaterial: string;
-    public walls: {
+    mainMaterial: string;
+
+    walls: {
       material: string,
       quantity: number,
     };
-    public roof: {
+
+    roof: {
       material: string,
       angleDegrees: number,
     };
-    public windows: {
+
+    windows: {
       material: string,
       quantity: number,
     };
@@ -149,10 +147,12 @@ namespace BuilderPattern {
           material: null,
           quantity: null,
       };
+
       this.roof = {
         material: null,
         angleDegrees: null,
       };
+
       this.windows = {
           material: null,
           quantity: null,
