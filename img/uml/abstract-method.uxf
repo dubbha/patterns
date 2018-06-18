@@ -4,14 +4,14 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>231</x>
-      <y>165</y>
+      <x>605</x>
+      <y>572</y>
       <w>231</w>
       <h>99</h>
     </coordinates>
     <panel_attributes>/PillCreator/
 -
-+theChosenPill: void
++theChosenPill: Pill
 -
 /+createPill(): void/
 +choosePill()
@@ -21,8 +21,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>110</x>
-      <y>319</y>
+      <x>484</x>
+      <y>726</y>
       <w>231</w>
       <h>66</h>
     </coordinates>
@@ -34,8 +34,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>297</x>
-      <y>253</y>
+      <x>671</x>
+      <y>660</y>
       <w>33</w>
       <h>88</h>
     </coordinates>
@@ -45,8 +45,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>385</x>
-      <y>253</y>
+      <x>759</x>
+      <y>660</y>
       <w>33</w>
       <h>88</h>
     </coordinates>
@@ -56,8 +56,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>363</x>
-      <y>319</y>
+      <x>737</x>
+      <y>726</y>
       <w>231</w>
       <h>66</h>
     </coordinates>
@@ -69,8 +69,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>110</x>
-      <y>528</y>
+      <x>484</x>
+      <y>935</y>
       <w>231</w>
       <h>33</h>
     </coordinates>
@@ -81,8 +81,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>231</x>
-      <y>429</y>
+      <x>605</x>
+      <y>836</y>
       <w>231</w>
       <h>55</h>
     </coordinates>
@@ -95,8 +95,8 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>363</x>
-      <y>528</y>
+      <x>737</x>
+      <y>935</y>
       <w>231</w>
       <h>33</h>
     </coordinates>
@@ -107,8 +107,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>385</x>
-      <y>473</y>
+      <x>759</x>
+      <y>880</y>
       <w>33</w>
       <h>77</h>
     </coordinates>
@@ -118,8 +118,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>297</x>
-      <y>473</y>
+      <x>671</x>
+      <y>880</y>
       <w>33</w>
       <h>77</h>
     </coordinates>
@@ -129,8 +129,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>517</x>
-      <y>374</y>
+      <x>891</x>
+      <y>781</y>
       <w>33</w>
       <h>176</h>
     </coordinates>
@@ -140,8 +140,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>154</x>
-      <y>374</y>
+      <x>528</x>
+      <y>781</y>
       <w>33</w>
       <h>176</h>
     </coordinates>
@@ -151,8 +151,8 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>330</x>
-      <y>231</y>
+      <x>704</x>
+      <y>638</y>
       <w>209</w>
       <h>33</h>
     </coordinates>
@@ -162,12 +162,179 @@
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>517</x>
-      <y>231</y>
-      <w>220</w>
+      <x>891</x>
+      <y>638</y>
+      <w>242</w>
       <h>33</h>
     </coordinates>
-    <panel_attributes>theChosenPill = createPill()</panel_attributes>
+    <panel_attributes>this.theChosenPill = createPill()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>605</x>
+      <y>110</y>
+      <w>231</w>
+      <h>99</h>
+    </coordinates>
+    <panel_attributes>/Creator/
+-
+product: Product
+-
+/+factoryMethod(): void/
++anOperation()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>451</x>
+      <y>253</y>
+      <w>264</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>ConcreteCreatorA
+-
++factoryMethod(): ConcreteProductA</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>671</x>
+      <y>198</y>
+      <w>33</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>759</x>
+      <y>198</y>
+      <w>33</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>737</x>
+      <y>253</y>
+      <w>264</w>
+      <h>66</h>
+    </coordinates>
+    <panel_attributes>ConcreteCreatorB
+-
++factoryMethod(): ConcreteProductB</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>484</x>
+      <y>440</y>
+      <w>231</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>ConcreteProductA
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>605</x>
+      <y>363</y>
+      <w>231</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>/Product/
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>737</x>
+      <y>440</y>
+      <w>231</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>ConcreteProductB
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>759</x>
+      <y>385</y>
+      <w>33</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>671</x>
+      <y>385</y>
+      <w>33</w>
+      <h>77</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;50.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>891</x>
+      <y>308</y>
+      <w>33</w>
+      <h>154</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>528</x>
+      <y>308</y>
+      <w>33</w>
+      <h>154</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;..</panel_attributes>
+    <additional_attributes>10.0;120.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>715</x>
+      <y>176</y>
+      <w>198</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>lt=.</panel_attributes>
+    <additional_attributes>10.0;10.0;160.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLNote</id>
+    <coordinates>
+      <x>891</x>
+      <y>176</y>
+      <w>231</w>
+      <h>33</h>
+    </coordinates>
+    <panel_attributes>this.product = factoryMethod()</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

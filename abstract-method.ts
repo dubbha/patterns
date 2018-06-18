@@ -1,8 +1,8 @@
 namespace AbstractMethodPattern {
   abstract class PillCreator {
-    public theChosenPill;
+    public theChosenPill: Pill;
 
-    abstract createPill(): void;
+    abstract createPill(): Pill;
 
     choosePill() {
       this.theChosenPill = this.createPill();
@@ -26,17 +26,11 @@ namespace AbstractMethodPattern {
   }
 
   class RedPill extends Pill {
-    constructor() {
-      super();
-      this.color = 'red';
-    }
+    color: string = 'red';
   }
 
   class BluePill extends Pill {
-    constructor() {
-      super();
-      this.color = 'blue';
-    }
+    color: string = 'blue';
   }
 
   // Client code
