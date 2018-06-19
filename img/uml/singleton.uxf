@@ -43,8 +43,8 @@ _-instance: Singleton_
     <coordinates>
       <x>672</x>
       <y>280</y>
-      <w>504</w>
-      <h>56</h>
+      <w>490</w>
+      <h>70</h>
     </coordinates>
     <panel_attributes>if (!Singleton.instance) { Singleton.instance = { ... }; }
 return Singleton.instance;</panel_attributes>
@@ -66,8 +66,8 @@ return Singleton.instance;</panel_attributes>
     <coordinates>
       <x>672</x>
       <y>574</y>
-      <w>630</w>
-      <h>238</h>
+      <w>602</w>
+      <h>70</h>
     </coordinates>
     <panel_attributes>if (!AlphaCentauriA.instance) { AlphaCentauriA.instance = { ... }; }
 return AlphaCentauriA.instance;</panel_attributes>
