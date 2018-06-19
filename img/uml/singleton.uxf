@@ -43,12 +43,10 @@ _-instance: Singleton_
     <coordinates>
       <x>672</x>
       <y>280</y>
-      <w>266</w>
-      <h>98</h>
+      <w>504</w>
+      <h>56</h>
     </coordinates>
-    <panel_attributes>if (!Singleton.instance) {
-  Singleton.instance = {};
-}
+    <panel_attributes>if (!Singleton.instance) { Singleton.instance = { ... }; }
 return Singleton.instance;</panel_attributes>
     <additional_attributes/>
   </element>
@@ -71,15 +69,7 @@ return Singleton.instance;</panel_attributes>
       <w>630</w>
       <h>238</h>
     </coordinates>
-    <panel_attributes>if (!AlphaCentauriA.instance) {
-  AlphaCentauriA.instance = {
-    name: 'HD 128620',
-    mass: '1.100 M',
-    radius: '1.2234±0.0053 R',
-    distance:	'4.37 ly',
-    rename: newName =&gt; AlphaCentauriA.instance.name = newName,
-  };
-}
+    <panel_attributes>if (!AlphaCentauriA.instance) { AlphaCentauriA.instance = { ... }; }
 return AlphaCentauriA.instance;</panel_attributes>
     <additional_attributes/>
   </element>
