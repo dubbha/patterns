@@ -63,7 +63,7 @@
       /><text x="5" font-size="14px" y="17.9688" clip-path="url(#clipPath3)" font-family="sans-serif" stroke="none" xml:space="preserve"
       >if (!Singleton.instance) {</text
       ><text x="5" font-size="14px" y="33.9375" clip-path="url(#clipPath3)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >|  Singleton.instance = {};</text
+      >  Singleton.instance = {};</text
       ><text x="5" font-size="14px" y="49.9062" clip-path="url(#clipPath3)" font-family="sans-serif" stroke="none" xml:space="preserve"
       >}</text
       ><text x="5" font-size="14px" y="65.875" clip-path="url(#clipPath3)" font-family="sans-serif" stroke="none" xml:space="preserve"
