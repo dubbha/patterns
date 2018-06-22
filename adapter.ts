@@ -12,8 +12,8 @@ namespace AdapterPattern {
   class Adapter implements InterfaceDC12V {
     private adaptee: OutletAC220V;
 
-    constructor(adaptee) {
-      this.adaptee = adaptee;
+    constructor() {
+      this.adaptee = new OutletAC220V();
     }
 
     private transformACDC(current) {
@@ -32,8 +32,7 @@ namespace AdapterPattern {
   }
 
   // Client code
-  const adaptee = new OutletAC220V();
-  const adapter = new Adapter(adaptee);
+  const adapter = new Adapter();
 
   console.log(adapter.chargeDC12V());     // 'DC12V'
 }
