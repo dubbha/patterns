@@ -3,7 +3,7 @@
 ### Creational Design Patterns
 - [x] [abstract factory](abstract-factory.md)
 - [x] [builder](builder.md)
-- [x] [abstract method](abstract-method.md)
+- [x] [factory method](factory-method.md)
 - [x] [prototype](prototype.md)
 - [x] [singleton](singleton.md)
 
