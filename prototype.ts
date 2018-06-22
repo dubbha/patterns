@@ -3,23 +3,51 @@ abstract class Prototype {
 }
 
 class ScottishBlackfaceSheepPrototype extends Prototype {
-  public faceColor: string;
   public name: string;
+  public country: string;
+  public face: {
+    color: string,
+    clone: Function,
+  }
+
 
   constructor() {
     super();
     this.name = 'Cytoplasmic Donor';
-    this.faceColor = 'black';
+    this.country = 'Scotland';
+    this.face = {
+      color: 'black',
+      clone() {                             // complex property must have its own .clone() method
+        return Object.assign({}, this);     // shallow copy of self
+      }
+    };
   }
 
-  clone() {
-    return Object.assign({}, this);   // just a shallow copy, nothing deep
+  clone(): ScottishBlackfaceSheepPrototype {
+    const cloneObj = {};
+
+    Object.keys(this).forEach((key) => {
+      const prop = this[key];
+
+      // Cloning of complex properties is performed using their own .clone() method
+      if (Object.prototype.toString.call(prop) === '[object Object]' && typeof prop.clone === 'function') {
+        cloneObj[key] = prop.clone();
+      } else {
+        cloneObj[key] = prop;
+      }
+    });
+
+    return <ScottishBlackfaceSheepPrototype>cloneObj;
   }
 }
 
 // Client code
-const sheepClone = new ScottishBlackfaceSheepPrototype();
+const sheepPrototype = new ScottishBlackfaceSheepPrototype();
+
+const sheepClone = sheepPrototype.clone();
+
 sheepClone.name = 'Dolly';
 
-console.log(sheepClone.faceColor);  // 'black'
-console.log(sheepClone.name);       // 'Dolly'
+console.log(sheepClone.name);         // 'Dolly'
+console.log(sheepClone.country);      // 'Scotland'
+console.log(sheepClone.face.color);   // 'black'
