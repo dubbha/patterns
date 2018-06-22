@@ -17,8 +17,8 @@ _-instance: AlphaCentauriA_
 +radius: string,
 +distance: string,
 -
-+constructor(): AlphaCentauriA
-+rename(newName: string): void
+-constructor()
+_+getInstance(): AlphaCentauriA_
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -28,13 +28,14 @@ _-instance: AlphaCentauriA_
       <x>294</x>
       <y>224</y>
       <w>308</w>
-      <h>98</h>
+      <h>126</h>
     </coordinates>
     <panel_attributes>Singleton
 -
 _-instance: Singleton_
 -
-+constructor(): Singleton
+-constructor()
+_+getInstance(): Singleton_
 </panel_attributes>
     <additional_attributes/>
   </element>
@@ -42,7 +43,7 @@ _-instance: Singleton_
     <id>UMLNote</id>
     <coordinates>
       <x>672</x>
-      <y>280</y>
+      <y>308</y>
       <w>490</w>
       <h>70</h>
     </coordinates>
@@ -53,19 +54,19 @@ return Singleton.instance;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>504</x>
-      <y>294</y>
-      <w>196</w>
+      <x>518</x>
+      <y>308</y>
+      <w>182</w>
       <h>42</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;120.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;110.0;10.0</additional_attributes>
   </element>
   <element>
     <id>UMLNote</id>
     <coordinates>
       <x>672</x>
-      <y>574</y>
+      <y>602</y>
       <w>602</w>
       <h>70</h>
     </coordinates>
@@ -76,12 +77,12 @@ return AlphaCentauriA.instance;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>560</x>
-      <y>574</y>
-      <w>140</w>
+      <x>574</x>
+      <y>602</y>
+      <w>126</w>
       <h>42</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;10.0;80.0;10.0</additional_attributes>
+    <additional_attributes>10.0;10.0;70.0;10.0</additional_attributes>
   </element>
 </diagram>

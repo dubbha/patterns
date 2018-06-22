@@ -1,27 +1,21 @@
 namespace SingletonPattern {
   class AlphaCentauriA {
-    static instance: {
-      name: string,
-      mass: string,
-      radius: string,
-      distance: string,
-      rename: Function,
-    };
+    private static instance: AlphaCentauriA;
 
     public name: string;
     public mass: string;
     public radius: string;
     public distance: string;
-    public rename: Function;
 
-    constructor() {
+    private constructor() {}                  // private constructor, can't call new AlphaCentauriA()
+
+    static getInstance(): AlphaCentauriA {    // static method returning a reference to the instance
       if (!AlphaCentauriA.instance) {
-        AlphaCentauriA.instance = {
+        AlphaCentauriA.instance = {           //  lazy initialization
           name: 'HD 128620',
           mass: '1.100 M',
           radius: '1.2234±0.0053 R',
           distance:	'4.37 ly',
-          rename: newName => AlphaCentauriA.instance.name = newName,
         };
       }
       return AlphaCentauriA.instance;
@@ -29,11 +23,11 @@ namespace SingletonPattern {
   }
 
   // Client code
-  let star = new AlphaCentauriA();  // instantiate
-  console.log(star.name);           // 'HD 128620'
+  let star = AlphaCentauriA.getInstance();    // instantiate
+  console.log(star.name);                     // 'HD 128620'
 
-  star.rename('Rigil Kentaurus');   // rename
+  star.name = 'Rigil Kentaurus'
 
-  star = new AlphaCentauriA();      // try to reinstantiate
-  console.log(star.name);           // 'Rigil Kentaurus'
+  star = AlphaCentauriA.getInstance();        // try to reinstantiate
+  console.log(star.name);                     // 'Rigil Kentaurus'
 }
