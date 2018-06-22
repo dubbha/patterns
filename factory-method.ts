@@ -1,22 +1,22 @@
-namespace AbstractMethodPattern {
+namespace FactoryMethodPattern {
   abstract class PillCreator {
     public theChosenPill: Pill;
 
     abstract createPill(): Pill;
 
-    choosePill() {
+    choosePill(): void {
       this.theChosenPill = this.createPill();
     }
   }
 
   class RedPillChooser extends PillCreator {
-    createPill() {
+    createPill(): RedPill {
       return new RedPill();
     }
   }
 
   class BluePillChooser extends PillCreator {
-    createPill() {
+    createPill(): BluePill {
       return new BluePill();
     }
   }
