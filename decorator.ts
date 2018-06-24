@@ -1,11 +1,11 @@
 namespace DecoratorPattern {
   abstract class Snowman {
-    abstract draw(color?: string): void;
+    abstract draw(): void;
   }
 
   class BasicSnowman extends Snowman {
-    draw(color = '\x1b[37m') {
-      console.log(color, '\u2603');
+    draw() {
+      console.log('\x1b[37m', '\u2603');
     }
   }
 
@@ -37,7 +37,7 @@ namespace DecoratorPattern {
         black: '\x1b[37m',
       };
 
-      this.snowman.draw(colorMap[this.color]);
+      console.log(colorMap[this.color], '\u2603');
     }
   }
 
