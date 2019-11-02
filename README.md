@@ -43,7 +43,7 @@
 - [ ] module
 - [ ] revealing module
 ### Behavioral
-- [x] pub-sub
+- [x] [publisher-subscriber](pubsub.md)
 ### Functional
 - [ ] closure
 - [ ] currying
