@@ -34,17 +34,21 @@
 ## Non-GoF Design Patterns <sup>[⇗](https://en.wikipedia.org/wiki/Software_design_pattern)</sup>
 
 ### Creational
-- [ ] dependency injection
+- [ ] factory
+- [ ] mixin
 - [ ] lazy initialization
+- [ ] dependency injection
 - [ ] object pool
 ### Structural
 - [ ] module
+- [ ] revealing module
 ### Behavioral
-- [ ] publish-subscribe
+- [ ] pub-sub
 ### Functional
 - [ ] closure
 - [ ] currying
 - [ ] function composition
+- [ ] middleware
 
 ## Usage
 
