@@ -43,7 +43,7 @@
 - [ ] module
 - [ ] revealing module
 ### Behavioral
-- [ ] pub-sub
+- [x] pub-sub
 ### Functional
 - [ ] closure
 - [ ] currying
