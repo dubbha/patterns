@@ -128,17 +128,17 @@
       /><text x="5" font-size="14px" y="17.9688" clip-path="url(#clipPath3)" font-family="sans-serif" stroke="none" xml:space="preserve"
       >switch(type) {</text
       ><text x="5" font-size="14px" y="33.9375" clip-path="url(#clipPath3)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >  case 'A':</text
+      > case 'A':</text
       ><text x="5" font-size="14px" y="49.9062" clip-path="url(#clipPath3)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >    return new ConcreteProductA();</text
+      >  return new ConcreteProductA();</text
       ><text x="5" font-size="14px" y="65.875" clip-path="url(#clipPath3)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >  case 'B':</text
+      > case 'B':</text
       ><text x="5" font-size="14px" y="81.8438" clip-path="url(#clipPath3)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >    return new ConcreteProductB();</text
+      >  return new ConcreteProductB();</text
       ><text x="5" font-size="14px" y="97.8125" clip-path="url(#clipPath3)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >  default:</text
+      > default:</text
       ><text x="5" font-size="14px" y="113.7812" clip-path="url(#clipPath3)" font-family="sans-serif" stroke="none" xml:space="preserve"
-      >    return null;</text
+      >  return null;</text
       ><text x="5" font-size="14px" y="129.75" clip-path="url(#clipPath3)" font-family="sans-serif" stroke="none" xml:space="preserve"
       >}</text
     ></g
@@ -239,8 +239,8 @@
     ><text x="29.5493" xml:space="preserve" y="16" clip-path="url(#clipPath9)" stroke="none"
       >asks for a new object</text
     ></g
-    ><g stroke-dasharray="8,5" stroke-miterlimit="5" transform="translate(820,140)" stroke-linecap="butt"
-    ><path fill="none" d="M10.5 60.5 L10.5 10.5" clip-path="url(#clipPath13)"
+    ><g stroke-dasharray="8,5" stroke-miterlimit="5" transform="translate(820,150)" stroke-linecap="butt"
+    ><path fill="none" d="M10.5 50.5 L10.5 10.5" clip-path="url(#clipPath10)"
     /></g
     ><g stroke-dasharray="8,5" stroke-miterlimit="5" transform="translate(570,150)" stroke-linecap="butt"
     ><path fill="none" d="M10.5 10.5 L260.5 10.5" clip-path="url(#clipPath11)"

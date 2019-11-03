@@ -113,12 +113,12 @@ _+create(type): Product_</panel_attributes>
       <h>84</h>
     </coordinates>
     <panel_attributes>switch(type) {
-  case 'A':
-    return new ConcreteProductA();
-  case 'B':
-    return new ConcreteProductB();
-  default:
-    return null;
+ case 'A':
+  return new ConcreteProductA();
+ case 'B':
+  return new ConcreteProductB();
+ default:
+  return null;
 }</panel_attributes>
     <additional_attributes/>
   </element>
@@ -138,12 +138,12 @@ _+create(type): Product_</panel_attributes>
     <id>Relation</id>
     <coordinates>
       <x>574</x>
-      <y>98</y>
+      <y>105</y>
       <w>21</w>
-      <h>56</h>
+      <h>49</h>
     </coordinates>
     <panel_attributes>lt=.</panel_attributes>
-    <additional_attributes>10.0;60.0;10.0;10.0</additional_attributes>
+    <additional_attributes>10.0;50.0;10.0;10.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
