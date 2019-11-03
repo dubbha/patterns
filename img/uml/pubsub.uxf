@@ -4,7 +4,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>824</x>
+      <x>800</x>
       <y>160</y>
       <w>192</w>
       <h>40</h>
@@ -19,7 +19,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>824</x>
+      <x>800</x>
       <y>304</y>
       <w>192</w>
       <h>40</h>
@@ -33,7 +33,7 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>912</x>
+      <x>888</x>
       <y>192</y>
       <w>24</w>
       <h>128</h>
@@ -44,7 +44,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>176</x>
+      <x>152</x>
       <y>304</y>
       <w>192</w>
       <h>72</h>
@@ -62,7 +62,7 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>376</x>
+      <x>352</x>
       <y>344</y>
       <w>24</w>
       <h>80</h>
@@ -73,7 +73,7 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>296</x>
+      <x>272</x>
       <y>344</y>
       <w>104</w>
       <h>24</h>
@@ -84,7 +84,7 @@
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>208</x>
+      <x>184</x>
       <y>408</y>
       <w>184</w>
       <h>24</h>
@@ -96,7 +96,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>176</x>
+      <x>152</x>
       <y>160</y>
       <w>192</w>
       <h>56</h>
@@ -112,7 +112,7 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>360</x>
+      <x>336</x>
       <y>160</y>
       <w>96</w>
       <h>24</h>
@@ -123,7 +123,7 @@
   <element>
     <id>Text</id>
     <coordinates>
-      <x>376</x>
+      <x>352</x>
       <y>152</y>
       <w>48</w>
       <h>24</h>
@@ -135,7 +135,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>440</x>
+      <x>416</x>
       <y>160</y>
       <w>304</w>
       <h>64</h>
@@ -152,7 +152,7 @@
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>440</x>
+      <x>416</x>
       <y>304</y>
       <w>304</w>
       <h>96</h>
@@ -171,7 +171,7 @@
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>224</x>
+      <x>200</x>
       <y>440</y>
       <w>184</w>
       <h>24</h>
@@ -182,7 +182,7 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>344</x>
+      <x>320</x>
       <y>352</y>
       <w>72</w>
       <h>24</h>
@@ -193,7 +193,7 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>392</x>
+      <x>368</x>
       <y>352</y>
       <w>24</w>
       <h>104</h>
@@ -204,7 +204,7 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>576</x>
+      <x>552</x>
       <y>216</y>
       <w>24</w>
       <h>104</h>
@@ -215,7 +215,7 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>736</x>
+      <x>712</x>
       <y>160</y>
       <w>104</w>
       <h>24</h>
@@ -226,7 +226,7 @@
   <element>
     <id>Text</id>
     <coordinates>
-      <x>752</x>
+      <x>728</x>
       <y>152</y>
       <w>56</w>
       <h>24</h>
@@ -238,7 +238,7 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>264</x>
+      <x>240</x>
       <y>208</y>
       <w>24</w>
       <h>112</h>
@@ -249,19 +249,19 @@
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>424</x>
+      <x>400</x>
       <y>408</y>
       <w>296</w>
       <h>32</h>
     </coordinates>
     <panel_attributes>this.subscribersByTopic[topic]
-  .forEach(s =&gt; s.update(topic, news))</panel_attributes>
+ .forEach(s =&gt; s.update(topic, news))</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>704</x>
+      <x>680</x>
       <y>344</y>
       <w>24</w>
       <h>80</h>
@@ -272,7 +272,7 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>608</x>
+      <x>584</x>
       <y>344</y>
       <w>120</w>
       <h>24</h>
@@ -283,7 +283,7 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>720</x>
+      <x>696</x>
       <y>352</y>
       <w>24</w>
       <h>112</h>
@@ -294,7 +294,7 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>688</x>
+      <x>664</x>
       <y>352</y>
       <w>56</w>
       <h>24</h>
@@ -305,7 +305,7 @@
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>440</x>
+      <x>416</x>
       <y>448</y>
       <w>296</w>
       <h>24</h>
@@ -316,19 +316,19 @@
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>464</x>
+      <x>440</x>
       <y>480</y>
       <w>296</w>
       <h>32</h>
     </coordinates>
     <panel_attributes>this.subscribersByTopic[topic] =
-  this.subscribersByTopic[topic].filter(s =&gt; s !== subscriber)</panel_attributes>
+ this.subscribersByTopic[topic].filter(s =&gt; s !== subscriber)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>744</x>
+      <x>720</x>
       <y>368</y>
       <w>24</w>
       <h>128</h>
@@ -339,7 +339,7 @@
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>696</x>
+      <x>672</x>
       <y>368</y>
       <w>72</w>
       <h>24</h>
