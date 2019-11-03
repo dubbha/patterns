@@ -34,7 +34,7 @@
 ## Non-GoF Design Patterns <sup>[⇗](https://en.wikipedia.org/wiki/Software_design_pattern)</sup>
 
 ### Creational
-- [ ] [factory](simple-factory.md) (aka "simple" factory) <sup>[⇗](https://refactoring.guru/design-patterns/factory-comparison) [⇗](https://en.wikipedia.org/wiki/Factory_(object-oriented_programming)) [⇗](https://www.oodesign.com/factory-pattern.html)</sup>
+- [ ] [factory](simple-factory.md), aka simple factory) <sup>[⇗](https://refactoring.guru/design-patterns/factory-comparison) [⇗](https://en.wikipedia.org/wiki/Factory_(object-oriented_programming)) [⇗](https://www.oodesign.com/factory-pattern.html)</sup>
 - [ ] mixin
 - [ ] lazy initialization
 - [ ] dependency injection
