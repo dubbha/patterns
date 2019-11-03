@@ -34,7 +34,7 @@
 ## Non-GoF Design Patterns <sup>[⇗](https://en.wikipedia.org/wiki/Software_design_pattern)</sup>
 
 ### Creational
-- [ ] factory
+- [ ] [factory](simple-factory.md) (aka "simple" factory) <sup>[⇗](https://refactoring.guru/design-patterns/factory-comparison) [⇗](https://en.wikipedia.org/wiki/Factory_(object-oriented_programming))</sup>
 - [ ] mixin
 - [ ] lazy initialization
 - [ ] dependency injection
@@ -50,7 +50,7 @@
 - [ ] function composition
 - [ ] middleware
 
-## Usage
+## Examples Usage
 
 Run TypeScript files from command line like so:
 ```
