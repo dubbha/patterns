@@ -316,9 +316,9 @@
   <element>
     <id>UMLNote</id>
     <coordinates>
-      <x>440</x>
+      <x>432</x>
       <y>480</y>
-      <w>296</w>
+      <w>304</w>
       <h>32</h>
     </coordinates>
     <panel_attributes>this.subscribersByTopic[topic] =
