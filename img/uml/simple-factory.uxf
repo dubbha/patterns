@@ -294,12 +294,12 @@ _+create(type): Vehicle_</panel_attributes>
       <h>84</h>
     </coordinates>
     <panel_attributes>switch(type) {
-  case 'car':
-    return new Car();
-  case 'truck':
-    return new Truck();
-  default:
-    return null;
+ case 'car':
+  return new Car();
+ case 'truck':
+  return new Truck();
+ default:
+  return null;
 }
 </panel_attributes>
     <additional_attributes/>
