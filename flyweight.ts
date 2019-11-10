@@ -1,80 +1,101 @@
 namespace FlyweightPattern {
   interface ISnowman {
     draw(times: number): void;
-    getAssociations(): void;
   }
 
-  class Snowman implements ISnowman {
-    // Extrinsic state
-    private times: number;
+  interface RepeatingState {    // Intrinsic state, shared data
+    color: string,
+  }
 
-    // Intrinsic state, shared data
-    private color: string;
+  interface UniqueState {       // Extrinsic state,  unique data
+    times: number,
+  }
 
-    // Intrinsic state, shared data
-    private associations = [
-      'snow',
-      'winter',
-      'christmas',
-      'new year',
-      'santa claus',
-    ];
+  class SnowmanContext implements ISnowman {
+    private flyweight: SnowmanFlyweight;    // Reference to Flyweight
+    private state: UniqueState;             // Extrinsic state,  unique data
 
-    // Intrinsic state, shared data
-    private colorMap = {
-      red: '\x1b[31m',
-      green: '\x1b[32m',
-      yellow: '\x1b[33m',
-      blue: '\x1b[34m',
-      magenta: '\x1b[35m',
-      cyan: '\x1b[36m',
-      black: '\x1b[37m',
-    };
-
-    constructor(color) {
-      this.color = color;
+    constructor(
+      factory: SnowmanFlyweightFactory,
+      repeatingState: RepeatingState,
+      uniqueState: UniqueState
+    ) {
+      this.flyweight = factory.buildSnowman(repeatingState);
+      this.state = uniqueState;
     }
 
-    draw(times = 1) {
-      this.times = times;
-      const str = Array(this.times).fill('\u2603').join('');
-      console.log(this.colorMap[this.color], str);
-    }
-
-    getAssociations() {
-      console.log(this.associations.join(', '));
+    draw() {
+      this.flyweight.draw(this.state);
     }
   }
 
-  class SnowmanFactory {
+  class SnowmanFlyweight {
+    private state: RepeatingState         // Intrinsic state, shared data
+
+    constructor(repeatingState: RepeatingState) {
+      this.state = repeatingState;
+    }
+
+    draw(uniqueState) {
+      const colorMap = {
+        red: '\x1b[31m',
+        green: '\x1b[32m',
+        yellow: '\x1b[33m',
+        blue: '\x1b[34m',
+        magenta: '\x1b[35m',
+        cyan: '\x1b[36m',
+        black: '\x1b[37m',
+      };
+
+      const str = Array(uniqueState.times).fill('\u2603').join('');
+      console.log(colorMap[this.state.color], str);
+    }
+  }
+
+  class SnowmanFlyweightFactory {
     private cache = {};
 
-    buildSnowman(color) {
-      if (this.cache[color]) {
-        return this.cache[color];
+    buildSnowman(repeatingState) {
+      const hash = JSON.stringify(repeatingState);
+      if (this.cache[hash]) {
+        return this.cache[hash];
       }
-      const instance = new Snowman(color);
-      this.cache[color] = instance;
-      return this.cache[color];
+      this.cache[hash] = new SnowmanFlyweight(repeatingState);
+      return this.cache[hash];
+    }
+
+    getCacheLength() {
+      console.log(Object.keys(this.cache).length);
+    }
+    getCache() {
+      console.log(this.cache);
     }
   }
 
   // Client code
-  const snowmanFactory = new SnowmanFactory();
+  const factory = new SnowmanFlyweightFactory();
 
-  const redSnowman1 = snowmanFactory.buildSnowman('red');
-  redSnowman1.draw();
-  const redSnowman2 = snowmanFactory.buildSnowman('red');
-  redSnowman2.draw(3);
+  const snowman1 = new SnowmanContext(factory, { color: 'red' }, { times: 1 });
+  snowman1.draw();
+  const snowman2 = new SnowmanContext(factory, { color: 'red' }, { times: 3 });
+  snowman2.draw();
+  factory.getCacheLength();     // 1
 
-  const greenSnowman1 = snowmanFactory.buildSnowman('green');
-  greenSnowman1.draw(2);
-  const greenSnowman2 = snowmanFactory.buildSnowman('green');
-  greenSnowman2.draw(4);
+  const snowman3 = new SnowmanContext(factory, { color: 'green' }, { times: 2 });
+  snowman3.draw();
+  factory.getCacheLength();     // 2
 
-  console.log(redSnowman1 === redSnowman2);       // true
-  console.log(greenSnowman1 === greenSnowman2);   // true
-  console.log(redSnowman1 === greenSnowman1);     // false
-
-  redSnowman1.getAssociations();                  // snow, winter, christmas, new year, santa claus
+  const snowman4 = new SnowmanContext(factory, { color: 'blue' }, { times: 1 });
+  snowman4.draw();
+  const snowman5 = new SnowmanContext(factory, { color: 'blue' }, { times: 3 });
+  snowman5.draw();
+  const snowman6 = new SnowmanContext(factory, { color: 'blue' }, { times: 5 });
+  snowman6.draw();
+  factory.getCacheLength();     // 3
+  factory.getCache();
+    // {
+    //   '{"color":"red"}': SnowmanFlyweight { state: { color: 'red' } },
+    //   '{"color":"green"}': SnowmanFlyweight { state: { color: 'green' } },
+    //   '{"color":"blue"}': SnowmanFlyweight { state: { color: 'blue' } }
+    // }
 }
